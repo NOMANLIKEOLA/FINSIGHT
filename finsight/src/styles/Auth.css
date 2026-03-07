@@ -58,3 +58,13 @@
   color: #4f46e5;
   text-decoration: none;
 }
+
+.errorMsg {
+  color: #dc2626;
+  background: #fee2e2;
+  padding: 8px;
+  border-radius: 6px;
+  margin-top: 8px;
+  font-size: 14px;
+  text-align: center;
+}

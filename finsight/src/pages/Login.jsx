@@ -6,31 +6,45 @@ function Login() {
 
   const navigate = useNavigate()
 
-  const [email, setEmail] = useState("")
-  const [password, setPassword] = useState("")
+  const [formData, setFormData] = useState({
+    email: "",
+    password: ""
+  })
+
+  const [error, setError] = useState("")
+
+  const handleChange = (e) => {
+
+    // clear error when user types
+    setError("")
+
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    })
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault()
 
     const storedUser = JSON.parse(localStorage.getItem("finsightUser"))
 
-    if (!storedUser) {
-      alert("User not found")
+    if (
+      !storedUser ||
+      storedUser.email !== formData.email ||
+      storedUser.password !== formData.password
+    ) {
+      setError("Invalid email or password")
       return
     }
 
-    if (email === storedUser.email && password === storedUser.password) {
+    localStorage.setItem("isLoggedIn", "true")
 
-      localStorage.setItem("isAuthenticated", "true")
-
-      navigate("/dashboard")
-
-    } else {
-      alert("Invalid credentials")
-    }
+    navigate("/dashboard")
   }
 
   return (
+
     <div className="authContainer">
 
       <div className="authCard">
@@ -41,17 +55,21 @@ function Login() {
 
           <input
             type="email"
+            name="email"
             placeholder="Email"
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={handleChange}
             required
           />
 
           <input
             type="password"
+            name="password"
             placeholder="Password"
-            onChange={(e) => setPassword(e.target.value)}
+            onChange={handleChange}
             required
           />
+
+          {error && <p className="errorMsg">{error}</p>}
 
           <button className="authBtn">
             Login
