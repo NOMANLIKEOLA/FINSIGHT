@@ -1,0 +1,60 @@
+.authContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background: #f8fafc;
+}
+
+.authCard {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  width: 380px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.06);
+}
+
+.authCard h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #0f172a;
+}
+
+.authCard form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.authCard input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.authBtn {
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #4f46e5;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.authBtn:hover {
+  background: #4338ca;
+}
+
+.authSwitch {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.authSwitch a {
+  color: #4f46e5;
+  text-decoration: none;
+}
