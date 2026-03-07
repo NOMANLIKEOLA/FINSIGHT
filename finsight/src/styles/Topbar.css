@@ -1,0 +1,17 @@
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.topbarTitle {
+  font-size: 28px;
+  color: #0f172a;
+}
+
+.topbarSubtitle {
+  color: #64748b;
+  margin-top: 4px;
+  font-size: 14px;
+}

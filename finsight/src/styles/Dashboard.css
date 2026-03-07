@@ -1,0 +1,97 @@
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+/* sidebar */
+
+.sidebar {
+  width: 230px;
+  background: white;
+  border-right: 1px solid #e5e7eb;
+  padding: 30px 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+  color: #4f46e5;
+}
+
+.sidebar a {
+  display: block;
+  margin-bottom: 16px;
+  color: #475569;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.sidebar a:hover {
+  color: #4f46e5;
+}
+
+/* main content */
+
+.dashboardContent {
+  flex: 1;
+  padding: 40px;
+}
+
+.dashboardContent h1 {
+  margin-bottom: 20px;
+  color: #0f172a;
+}
+
+/* stats */
+
+.statsGrid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 20px;
+}
+
+.statCard {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.statCard h4 {
+  color: #64748b;
+  margin-bottom: 8px;
+}
+
+.statCard p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0f172a;
+}
+
+/* insights */
+
+.insights {
+  margin-top: 40px;
+}
+
+.insightCard {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  margin-top: 15px;
+  color: #475569;
+}
+
+/* logout button */
+
+.logoutBtn {
+  margin-top: 10px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  background: #ef4444;
+  color: white;
+  cursor: pointer;
+}
