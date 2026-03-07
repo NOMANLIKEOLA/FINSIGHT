@@ -7,7 +7,6 @@ function Navbar() {
       <h2 className="logo">FinSight</h2>
 
       <div className="navlinks">
-        <Link to="/">Home</Link>
         <Link to="/login">Login</Link>
         <Link to="/signup" className="cta">Get Started</Link>
       </div>
