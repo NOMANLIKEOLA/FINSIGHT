@@ -36,7 +36,7 @@ function Signup() {
 
     localStorage.setItem("finsightUser", JSON.stringify(user))
 
-      localStorage.setItem("isAuthenticated", "true")
+      localStorage.setItem("isLoggedIn", "true")
 
     navigate("/dashboard")
   }
