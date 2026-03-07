@@ -14,7 +14,8 @@
 }
 
 .sidebar h2 {
-  margin-bottom: 30px;
+  font-size: 22px;
+  font-weight: 700;
   color: #4f46e5;
 }
 
@@ -28,6 +29,10 @@
 
 .sidebar a:hover {
   color: #4f46e5;
+}
+
+.logoLink {
+  text-decoration: none;
 }
 
 /* main content */

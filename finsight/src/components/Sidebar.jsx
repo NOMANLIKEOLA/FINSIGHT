@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, Navigate } from "react-router-dom"
 import "../styles/Dashboard.css"
 
 function Sidebar() {
@@ -7,7 +7,9 @@ function Sidebar() {
 
     <div className="sidebar">
 
-      <h2>FinSight</h2>
+      <Link to="/" className="logoLink">
+            <h2>FinSight</h2>
+      </Link>
 
       <Link to="/dashboard">Dashboard</Link>
       <Link to="#">Analytics</Link>
