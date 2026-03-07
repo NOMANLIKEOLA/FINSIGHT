@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar"
 import FeatureCard from "../components/FeatureCard"
 import "../styles/Landing.css"
+import BenefitCard from "../components/BenefitCard"
 
 function Landing() {
   return (
@@ -51,6 +52,33 @@ function Landing() {
           />
 
         </div>
+
+      </section>
+
+      <section className="benefits">
+
+            <h2 className="benefitsTitle">
+              Why Choose FinSight
+            </h2>
+
+            <div className="benefitsGrid">
+
+                  <BenefitCard
+                    title="Smarter Financial Planning"
+                    description="Make confident financial decisions using intelligent analytics and insights."
+                  />
+
+                  <BenefitCard
+                    title="Clear Spending Insights"
+                    description="Understand exactly where your money goes with powerful expense tracking."
+                  />
+
+                  <BenefitCard
+                    title="Better Investment Decisions"
+                    description="Use data driven insights to identify opportunities and grow your portfolio."
+                  />
+
+            </div>
 
       </section>
 
