@@ -36,6 +36,8 @@ function Signup() {
 
     localStorage.setItem("finsightUser", JSON.stringify(user))
 
+      localStorage.setItem("isAuthenticated", "true")
+
     navigate("/dashboard")
   }
 
