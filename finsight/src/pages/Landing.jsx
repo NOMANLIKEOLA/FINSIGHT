@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar"
 import FeatureCard from "../components/FeatureCard"
-import "../styles/Landing.css"
+import "../styles/landing.css"
 import BenefitCard from "../components/BenefitCard"
 import TestimonialCard from "../components/TestimonialCard"
 
