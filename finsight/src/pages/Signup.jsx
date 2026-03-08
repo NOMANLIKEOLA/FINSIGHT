@@ -13,7 +13,11 @@ function Signup() {
     confirmPassword: ""
   })
 
+  const [error, setError] = useState("")
+
   const handleChange = (e) => {
+    setError("")
+
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
@@ -24,7 +28,7 @@ function Signup() {
     e.preventDefault()
 
     if (formData.password !== formData.confirmPassword) {
-      alert("Passwords do not match")
+      setError("Passwords do not match")
       return
     }
 
@@ -35,13 +39,13 @@ function Signup() {
     }
 
     localStorage.setItem("finsightUser", JSON.stringify(user))
-
-      localStorage.setItem("isLoggedIn", "true")
+    localStorage.setItem("isLoggedIn", "true")
 
     navigate("/dashboard")
   }
 
   return (
+
     <div className="authContainer">
 
       <div className="authCard">
@@ -81,6 +85,8 @@ function Signup() {
             onChange={handleChange}
             required
           />
+
+          {error && <p className="errorMsg">{error}</p>}
 
           <button className="authBtn">
             Sign Up

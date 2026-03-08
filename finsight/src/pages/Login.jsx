@@ -15,7 +15,6 @@ function Login() {
 
   const handleChange = (e) => {
 
-    // clear error when user types
     setError("")
 
     setFormData({
@@ -29,18 +28,20 @@ function Login() {
 
     const storedUser = JSON.parse(localStorage.getItem("finsightUser"))
 
-    if (
-      !storedUser ||
-      storedUser.email !== formData.email ||
-      storedUser.password !== formData.password
-    ) {
-      setError("Invalid email or password")
+    if (!storedUser) {
+      setError("User not found. Please sign up.")
       return
     }
 
-    localStorage.setItem("isLoggedIn", "true")
-
-    navigate("/dashboard")
+    if (
+      storedUser.email === formData.email &&
+      storedUser.password === formData.password
+    ) {
+      localStorage.setItem("isLoggedIn", "true")
+      navigate("/dashboard")
+    } else {
+      setError("Invalid email or password")
+    }
   }
 
   return (
