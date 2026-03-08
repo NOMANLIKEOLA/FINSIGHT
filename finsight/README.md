@@ -1,16 +1,123 @@
-# React + Vite
+# FinSight – Personal Finance Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Frontend Internship Project
 
-Currently, two official plugins are available:
+FinSight is a personal finance dashboard developed as part of a frontend development internship project. The goal of the project was to design and implement a modern financial dashboard interface while demonstrating core frontend development skills such as component-based architecture, client-side routing, authentication flows, and data visualization.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The application allows users to create an account, log in, and access a protected dashboard displaying financial analytics and insights.
 
-## React Compiler
+## Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Live Application: https://finsight-project.vercel.app/
 
-## Expanding the ESLint configuration
+## Project Objectives
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This project was built to demonstrate:
+
+* React component architecture
+* Client-side authentication flow
+* Protected routes
+* State management using React hooks
+* Data visualization using charts
+* Responsive dashboard layout
+* Modern UX practices
+
+## Features
+
+### User Authentication
+
+* User signup and login functionality
+* Password confirmation validation
+* Inline error handling for invalid credentials
+* Local storage-based session management
+* Protected dashboard routes
+
+### Dashboard
+
+* Financial overview statistics
+* Expense analytics visualization
+* Investment growth chart
+* Sidebar navigation
+* Personalized user greeting
+* Logout functionality
+
+### User Experience
+
+* Clean fintech-style interface
+* Form validation and feedback
+* Responsive layout
+* Modern dashboard UI
+
+## Technologies Used
+
+### Frontend
+
+* React
+* React Router
+* Chart.js
+* React Chart.js 2
+
+### Styling
+
+* CSS
+
+### Deployment
+
+* Vercel
+
+## Project Structure
+src
+ ├── components
+ │   ├── AnalyticsCharts.jsx
+ │   ├── Topbar.jsx
+ │
+ ├── pages
+ │   ├── Landing.jsx
+ │   ├── Login.jsx
+ │   ├── Signup.jsx
+ │   ├── Dashboard.jsx
+ │
+ ├── styles
+ │   ├── Auth.css
+ │   ├── Dashboard.css
+ │   ├── Charts.css
+ │
+ ├── App.jsx
+ └── main.jsx
+
+## Installation
+
+Clone the repository:
+
+git clone https://github.com/yourusername/finsight-dashboard.git
+
+Navigate into the project folder:
+
+
+cd finsight-dashboard
+
+
+Install dependencies:
+
+npm install
+
+Run the development server:
+npm run dev
+
+Open in browser:
+
+http://localhost:5173
+
+## Deployment
+
+The application is deployed using Vercel for fast and reliable hosting of the React application.
+
+## Author
+
+Ahmed Oladipo
+Frontend Developer
+
+GitHub: https://github.com/NOMANLIKEOLA
+
+
+This project was developed as part of a frontend development internship assignment to demonstrate practical skills in building a modern React dashboard application.
