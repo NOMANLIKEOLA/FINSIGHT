@@ -119,5 +119,4 @@ Frontend Developer
 
 GitHub: https://github.com/NOMANLIKEOLA
 
-
-This project was developed as part of a frontend development internship assignment to demonstrate practical skills in building a modern React dashboard application.
+ 
